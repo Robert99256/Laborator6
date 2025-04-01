@@ -1,5 +1,5 @@
 public class Calculator {
-    private double rezultat;
+   protected double rezultat;
 
     public Calculator() {
         this.rezultat = 0;
