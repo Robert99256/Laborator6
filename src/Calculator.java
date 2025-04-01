@@ -8,23 +8,27 @@ public class Calculator {
     public Calculator(double x) {
         this.rezultat = x;
     }
-    public void adunare(double x) {
+    public Calculator adunare(double x) {
         rezultat += x;
+        return this;
     }
 
-    public void scadere(double x) {
+    public Calculator scadere(double x) {
         rezultat -= x;
+        return this;
     }
 
-    public void inmultire(double x) {
+    public Calculator inmultire(double x) {
         rezultat *= x;
+        return this;
     }
 
-    public void impartire(double x) {
+    public Calculator impartire(double x) {
         if(x==0){
             throw new RuntimeException("Impartire!!!");
         }
         rezultat /= x;
+        return this;
     }
 
     public double getRezultatul() {
